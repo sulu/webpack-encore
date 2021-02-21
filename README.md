@@ -1,4 +1,4 @@
-# Simple Webpacke Encore
+# Simple Webpack Encore
 
 Simple Webpack Encore implementation, with `sass-loader` for css.
 This package provides a simple recipe for webpack encore
@@ -23,13 +23,13 @@ npm run build
 
 ### Embed JS
 
-```bash
+```twig
 <script src="{{ asset('build/website/app.js', 'website') }}"></script>
 ```
 
 ### Embed CSS
 
-```bash
+```twig
 <link href="{{ asset('build/website/app.css', 'website') }}" rel="stylesheet">
 ```
 
