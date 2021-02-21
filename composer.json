@@ -1,0 +1,16 @@
+{
+    "name": "l91/webpack-encore",
+    "description": "A package to install webpack encore into your package without stimilus.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Schranz",
+            "email": "alexander@sulu.io"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "symfony/asset": "^4.4 || ^5.2"
+    }
+}
