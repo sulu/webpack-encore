@@ -21,17 +21,22 @@ npm install
 npm run build
 ```
 
-### Embed JS
+### Embed JS / CSS
+
+The JS:
 
 ```twig
-<script src="{{ asset('build/website/app.js', 'website') }}"></script>
+<script src="{{ asset('build/website/main.js', 'website') }}"></script>
 ```
 
-### Embed CSS
+The CSS:
 
 ```twig
-<link href="{{ asset('build/website/app.css', 'website') }}" rel="stylesheet">
+<link href="{{ asset('build/website/main.css', 'website') }}" rel="stylesheet">
 ```
+
+After embedding you should see a colored background. This means
+your build did successfully work.
 
 ### Remove Package
 
@@ -41,4 +46,27 @@ the composer files.
 
 ```bash
 git checkout symfony.lock composer.lock composer.json
+```
+
+### Preloading CSS / JS
+
+If you want to preload the CSS or CSS you can do this using the
+symfony/web-link package:
+
+```bash
+composer require symfony/web-link
+```
+
+After this just wrap the `asset` function in `preload` e.g.:
+
+The JS:
+
+```twig
+<script src="{{ preload(asset('build/website/main.js', 'website')) }}"></script>
+```
+
+The CSS:
+
+```twig
+<link href="{{ preload(asset('build/website/main.css', 'website')) }}" rel="stylesheet">
 ```
