@@ -54,6 +54,7 @@ If you want to preload the CSS or CSS you can do this using the
 symfony/web-link package:
 
 ```bash
+composer require symfony/asset
 composer require symfony/web-link
 ```
 
