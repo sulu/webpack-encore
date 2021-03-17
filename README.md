@@ -7,7 +7,7 @@ to use without `Stimilus` integration and `webpack-encore-bundle`.
 ## Installation
 
 ```bash
-composer require l91/webpack-encore
+composer require sulu/webpack-encore
 ```
 
 The symfony/flex recipe should now generate the CSS/JS setup

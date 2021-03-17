@@ -1,14 +1,26 @@
 {
-    "name": "l91/webpack-encore",
+    "name": "sulu/webpack-encore",
     "description": "A package to install webpack encore into your package without stimilus.",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "symfony",
+        "sulu",
+        "sulucms",
+        "cms",
+        "webpack",
+        "encore"
+    ],
     "authors": [
         {
-            "name": "Alexander Schranz",
-            "email": "alexander@sulu.io"
+            "name": "Sulu Community",
+            "homepage": "https://github.com/sulu/webpack-encore/graphs/contributors"
         }
     ],
+    "support": {
+        "issues": "https://github.com/sulu/webpack-encore/issues",
+        "source": "https://github.com/sulu/webpack-encore"
+    },
     "require": {
         "php": "^7.2",
         "symfony/asset": "^4.4 || ^5.2"
